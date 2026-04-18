@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+}
+
+html {
+  background-color: #F5EDDC;
+}
+
+body {
+  @apply bg-cream text-ink;
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
