@@ -1,0 +1,12 @@
+.git
+.next
+node_modules
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+README.md
+crionna-gameplan.md
+Dockerfile
+docker-compose.yml
+.dockerignore

@@ -43,6 +43,12 @@ ink: #1A1F1A     inkSoft: #5B6155     stone: #A89D85
 ```
 Fraunces (display/serif) + JetBrains Mono (data/labels). No emoji. No generic SaaS blue.
 
+## Deployment
+- Runs in Docker on local hardware (Pi or Mac mini). No Vercel.
+- Cloudflare Tunnel (`cloudflared`) provides the public HTTPS URL for phone access.
+- `docker compose up --build` is the full deploy. No serverless constraints — no timeout worries.
+- `NEXT_PUBLIC_APP_URL` should be set to the Cloudflare tunnel hostname in `.env.local`.
+
 ## Testing expectations
 - Unit test all normalization math in `lib/compare/`
 - Integration test each ingestion path with real sanitized sample HTML per retailer
